@@ -10,7 +10,7 @@
    // "forwardPorts": [],
   
   // Use 'postCreateCommand' to run commands after the container is created.
-  "postCreateCommand": "cd ews-protocol-editor && yarn install",
+  "postCreateCommand": "cd MyApp && yarn install",
 
   "customizations": {
     "vscode": {
