@@ -1,0 +1,30 @@
+
+{
+  "name": "MyApp",
+  
+  "image":"mcr.microsoft.com/devcontainers/typescript-node:dev-18-bookworm",
+   // Features to add to the dev container. More info: https://containers.dev/features.
+   // "features": {},
+
+   // Use 'forwardPorts' to make a list of ports inside the container available locally.
+   // "forwardPorts": [],
+  
+  // Use 'postCreateCommand' to run commands after the container is created.
+  "postCreateCommand": "cd ews-protocol-editor && yarn install",
+
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "esbenp.prettier-vscode",
+        "mhutchie.git-graph",
+        "dbaeumer.vscode-eslint"
+      ],
+      "settings": {
+          "terminal.integrated.profile.linux": "/bin/bash",
+          "editor.tabSize": 2,
+          "files.eol": "\n",
+          "extensions.autoUpdate": false
+        }
+    }
+  },
+}
